@@ -248,25 +248,26 @@ header ul li:last-child {
 
 .content-section.about .about-inner .reward {
   width: 100%;
-  border: 1px solid black;
+
   padding: 2;
 }
 
 .content-section.about .about-inner .reward h4 {
   display: flex;
-
+  margin-bottom: 0rem;
   align-items: center;
   color: black;
   font-family: "Commissioner", sans-serif;
   font-weight: bold;
   text-align: left;
-  margin: 0.1em;
+
   font-size: 2.5rem;
 }
 
 .content-section.about .about-inner .reward h4 span {
   color: #998787;
   padding-left: 0.5em;
+
   font-size: 1rem;
 }
 
@@ -275,16 +276,33 @@ header ul li:last-child {
   font-family: "Commissioner", sans-serif;
   font-weight: 500;
   text-align: center;
+
   float: right;
   display: block;
   padding: 1.5em;
-  margin-top: 1em;
+
   width: 50%;
   border-radius: 30px;
   background-color: #3ab5aa;
   border: none;
 }
+.content-section.about .about-inner .reward .select {
+  font-family: "Commissioner", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  float: right;
+  display: block;
+  padding: 1.5em;
 
+  width: 50%;
+  border-radius: 30px;
+  background-color: #999b9b;
+  border: none;
+}
+
+/* modal */
+
+/* end modal */
 @media only screen and (max-width: 375px) {
   .content-section .mark-btn {
     width: 100%;
