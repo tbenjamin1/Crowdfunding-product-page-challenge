@@ -61,8 +61,13 @@ header a img {
   padding: 0.5em;
   width: 20px;
 }
-
 header ul {
+  display: flex;
+  color: #fff;
+  width: 90%;
+}
+
+/* header ul {
   display: none;
   width: 90%;
   padding: 0;
@@ -76,7 +81,7 @@ header ul {
   border-radius: 10px;
   position: absolute;
   z-index: 4;
-}
+} */
 
 header ul li {
   width: 100%;
@@ -84,7 +89,7 @@ header ul li {
 }
 
 header ul li a {
-  color: #000;
+  color: #fff;
   font-family: "Commissioner", sans-serif;
   font-weight: 700;
   text-align: left;
@@ -99,7 +104,8 @@ header ul li:last-child {
   display: flex;
 
   flex-direction: column;
-
+  font-family: "Commissioner", sans-serif;
+  font-weight: 700;
   align-items: center;
   width: 80%;
   max-width: 700px;
@@ -136,34 +142,56 @@ header ul li:last-child {
 }
 .content-section .mark-btn {
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  gap: 8rem;
+  gap: 1em;
   width: 100%;
 }
+
 .content-section .mark-btn button {
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   border-radius: 40px;
   border: none;
 }
+
 .content-section .mark-btn button:first-child {
   color: #fff;
   font-family: "Commissioner", sans-serif;
   font-weight: bold;
   text-align: center;
   font-size: 0.8rem;
-  width: 40%;
+  width: 70%;
   padding: 1.5em;
   background-color: #3ab5aa;
 }
+
 .content-section .mark-btn button:last-child {
   width: auto;
-  background-color: rgb(240, 229, 229);
+  background-color: transparent;
 }
+
+.content-section .mark-btn button:last-child span {
+  display: none;
+}
+
 .content-section.normal-content {
   margin-top: 0;
 }
